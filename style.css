@@ -311,7 +311,7 @@ input:checked + .slider:before {
 /* ===== COPYRIGHT ===== */
 .copyright {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     text-align: center;
     width: 100%;
     font-size: 14px;
@@ -343,14 +343,10 @@ input:checked + .slider:before {
 
 /* ===== SOCIAL MEDIA BUTTONS ===== */
 .social-links {
-    position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 15px;
-    z-index: 20;
+    margin-top: 10px;
 }
 
 .social-btn {
@@ -425,13 +421,21 @@ input:checked + .slider:before {
 }
 
 /* Responsive adjustments */
-/* Adjust copyright container for social buttons */
-.copyright {
-    padding-bottom: 20px;
+@media (max-width: 768px) {
+    .calculator-container {
+        margin-bottom: 100px;
+    }
 }
 
-/* Responsive adjustments */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+    .calculator-container {
+        margin-bottom: 120px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+    
     .social-btn {
         width: 30px;
         height: 30px;
